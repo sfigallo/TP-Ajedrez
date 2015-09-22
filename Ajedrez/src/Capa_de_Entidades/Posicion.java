@@ -15,6 +15,15 @@ public class Posicion {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
+	public boolean isDentroTablero(){
+		if((this.letra>='a')&&(this.letra<='h'))
+			if((this.numero>=1)&&(this.numero<=8))
+				return true;
+			else return false;
+		else return false;
+		
+			 
+	}
 	
 	
 }
