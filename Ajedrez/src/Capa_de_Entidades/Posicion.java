@@ -3,6 +3,7 @@ package Capa_de_Entidades;
 public class Posicion {
 	private char letra;
 	private int numero;
+	
 	public char getLetra() {
 		return letra;
 	}
@@ -20,9 +21,10 @@ public class Posicion {
 			if((this.numero>=1)&&(this.numero<=8))
 				return true;
 			else return false;
-		else return false;
-		
-			 
+		else return false;	 
+	}
+	public boolean equals(Posicion p){
+		return((this.letra==p.letra)&&(this.numero==p.numero));
 	}
 	
 	
